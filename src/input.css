@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+@theme {  
+    /* padding start  */
+    --spacing-headerP: 50px;
+    
+    /* padding End */
+    /* color start  */
+    --color-Hcolor: #FFF8F3;
+    --color-Dark02: #474747;
+    --color-Dark01: #181818;
+     --color-Dark03: #757575;
+    /* color start  */
+    /* container start  */
+    --spacing-mContainer: 1140px; 
+     /* container start  */
+     /* Front start  */
+     --font-display-open: "Open Sans", "sans-serif";
+     /* Front end  */
+ }
