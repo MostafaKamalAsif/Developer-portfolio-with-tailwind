@@ -14,7 +14,8 @@ function responsivemanu(){
     }
      else {
         bar.classList.add("hidden")
-           menu.classList.remove("hidden")
+         Hedder.classList.add("flex") 
+  
 
     }
 }
