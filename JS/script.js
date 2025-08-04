@@ -4,24 +4,25 @@ let menu=document.querySelector(".menu")
 let Hedder=document.querySelector(".Hedder")
 
 function responsivemanu(){
-  if (window.innerWidth <= 640 ) {
-        bar.classList.remove("hidden")
+  if (window.innerWidth <= 640 && bar.classList.contains("block") ) {
+
         Hedder.classList.remove("flex")
-         menu.classList.add("hidden") 
-         logo.classList.add("hidden")
+       bar.style.position="relative"
+       menu.style.position="absolute"
+      
+
     }
      else {
         bar.classList.add("hidden")
-        menu.classList.remove("hidden")
-     
-  
+           menu.classList.remove("hidden")
+
     }
 }
 // Run once when page loads
 document.addEventListener("DOMContentLoaded", responsivemanu)
 
-// Run whenever the window is resized
-window.addEventListener("resize",responsivemanu)
+// // Run whenever the window is resized
+// window.addEventListener("resize",responsivemanu)
 
 // Toggle menu on bar click
 bar.addEventListener("click",()=>{
@@ -41,12 +42,15 @@ bar.addEventListener("click",()=>{
           >Hire Me</a>
         </li>
       </ul>`;
-      menu.style.background="#f5f5f5"
+      menu.style.background="transparent"
       menu.style.padding="20px 0 20px 30px"
       menu.style.borderRadius="16px"
+       menu.style.top="120px"
+       menu.style.width="230px"
       
   } else {
     // Optional: Clear content if hidden
+  
     menu.innerHTML = "";
   }
 });
