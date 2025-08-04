@@ -22,7 +22,7 @@ function responsivemanu(){
 document.addEventListener("DOMContentLoaded", responsivemanu)
 
 // // Run whenever the window is resized
-// window.addEventListener("resize",responsivemanu)
+window.addEventListener("resize",responsivemanu)
 
 // Toggle menu on bar click
 bar.addEventListener("click",()=>{
