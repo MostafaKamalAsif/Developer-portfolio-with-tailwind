@@ -3,8 +3,8 @@ let logo=document.querySelector(".logo")
 let menu=document.querySelector(".menu")
 let Hedder=document.querySelector(".Hedder")
 
-document.addEventListener("DOMContentLoaded", ()=>{
-    if (window.innerWidth <= 640 ) {
+function responsivemanu(){
+  if (window.innerWidth <= 640 ) {
         bar.classList.remove("hidden")
         Hedder.classList.remove("flex")
          menu.classList.add("hidden") 
@@ -13,8 +13,17 @@ document.addEventListener("DOMContentLoaded", ()=>{
      else {
         bar.classList.add("hidden")
         menu.classList.remove("hidden")
+     
+  
     }
-})
+}
+// Run once when page loads
+document.addEventListener("DOMContentLoaded", responsivemanu)
+
+// Run whenever the window is resized
+window.addEventListener("resize",responsivemanu)
+
+// Toggle menu on bar click
 bar.addEventListener("click",()=>{
  // Toggle the "hidden" class on the menu
   menu.classList.toggle("hidden");
